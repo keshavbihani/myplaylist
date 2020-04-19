@@ -1,6 +1,6 @@
 import os
 import django
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myplaylist.settings.local')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myplaylist.settings')
 django.setup()
 import pika
 from django.conf import settings
