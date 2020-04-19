@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myplaylist.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myplaylist.settings.local')
     try:
         from django.core.management.commands.runserver import Command as runserver
         runserver.default_port = "8080"
