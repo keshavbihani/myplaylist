@@ -19,7 +19,7 @@ DATABASES = {
 		}
 }
 
-# BROKER_URL = 'amqp://localhost'
-# BROKER_HEARTBEAT = 40
+BROKER_URL = 'amqp://qhfoemfx:XXeIkg9oXCRUT8Ej-yfLZt2x9n4dVqNa@eagle.rmq.cloudamqp.com/qhfoemfx'
+BROKER_HEARTBEAT = 40
 
-# RABBITMQ_URL = 'amqp://guest:guest@localhost'
+RABBITMQ_URL = 'amqp://qhfoemfx:XXeIkg9oXCRUT8Ej-yfLZt2x9n4dVqNa@eagle.rmq.cloudamqp.com/qhfoemfx'
