@@ -154,7 +154,8 @@ from celery.schedules import crontab
 CELERYBEAT_SCHEDULE={
     'friday-fourpm-scheduler':{
         'task':'music.celery_task.top_three_playlist',
-        'schedule': crontab(hour=16, minute=00, day_of_week=5),
+        'schedule': 15,
+        'options': {'queue' : 'celery_periodic'}
     }
 }
 
