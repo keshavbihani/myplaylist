@@ -6,6 +6,6 @@ urlpatterns = [
     path('playlist/',PlaylistViews.as_view()),
     path('playlist/<int:id>',PlaylistDetailViews.as_view()),
     path('post_song',post_song),
-    path('cpu_intensive',cpu_intensive), 
+    path('cpu_intensive',cpu_intensive)
 ]
 
