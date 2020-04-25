@@ -124,3 +124,15 @@ class PlaylistDetailViews(APIView):
 			serializer.save()
 			return Response(serializer.data,status=status.HTTP_200_OK)
 		return Response({"message":"invalid data"},status=status.HTTP_400_BAD_REQUEST)	
+
+
+@api_view()
+def cpu_intensive(request):
+	try:
+		factorial = 1
+		for i in range(1,1000):
+	       factorial = factorial*i
+	    return Response({"message":done},status=status.HTTP_200_OK)   
+	except Exception as e:
+		return Response({"message":e},status=status.HTTP_400_BAD_REQUEST)       
+       
